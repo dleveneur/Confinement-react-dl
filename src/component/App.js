@@ -9,7 +9,7 @@ import { useUserState } from "../context/UserContext";
 
 export default function App() {
   // global
-  var { isAuthenticated } = useUserState();
+  var { isAuthenticated } = false;  //useUserState();
 
   return (
     <HashRouter>
@@ -34,7 +34,7 @@ export default function App() {
           ) : (
             <Redirect
               to={{
-                pathname: "/login",
+                pathname: "/",
                 state: {
                   from: props.location,
                 },
