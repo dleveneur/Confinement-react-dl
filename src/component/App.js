@@ -54,7 +54,7 @@ export default function App() {
           isAuthenticated ? (
             <Redirect
               to={{
-                pathname: "/app/dashboard",
+                pathname: "/dashboard",
               }}
             />
           ) : (
